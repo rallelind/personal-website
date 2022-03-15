@@ -1,4 +1,5 @@
-import stylesModal from "../styles/Modal.module.css"
+
+
 
 import { Modal, Text } from '@nextui-org/react'
 
@@ -7,7 +8,7 @@ const Modals = (props) => {
         <div>
             <Modal
                 noPadding
-                width="500px"
+                width="600px"
                 open={props.open}
                 onClose={props.onClose}
             >
@@ -17,7 +18,7 @@ const Modals = (props) => {
                     </Text>
                 </Modal.Header>
                 <Modal.Body>
-                    <img className={stylesModal.img} src={props.image} />
+                    <img height="600px" src={props.image} />
                 </Modal.Body>
             </Modal>
         </div>
