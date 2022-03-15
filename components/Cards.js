@@ -2,24 +2,23 @@ import { Grid, Card, Text } from '@nextui-org/react';
 import { useState } from 'react'
 import stylesCards from "../styles/Cards.module.css"
 import { BsCodeSlash } from "react-icons/bs"
-import Link from 'next/link';
 import Modal from './Modal';
 
 
 const Cards = () => {
 
-    const [visible, setVisible] = useState(false);
-    const handler = () => setVisible(true);
-    const closeHandler = () => setVisible(false);
+    const [firstModal, setFirstModal] = useState(false)
+    const [secondModal, setSecondModal] = useState(false)
+    const [thirdModal, setThirdModal] = useState(false);
     
 
-    const MockItem = ({text, modal}) => {
+    const MockItem = ({text, onClick}) => {
         return (
             <Card 
                 clickable 
                 hoverable 
+                onClick={onClick}
                 color="gradient" css={{ h: '$50' }}
-                onClick={handler}
             >
               <Text h6 size={15} color="white" css={{ mt: 0 }}>
                 {text}
@@ -37,23 +36,35 @@ const Cards = () => {
           <Grid xs={8} sm={4} md={4} lg={4}>
               <MockItem 
                 text="Click to view code snippet from a full stack MERN project"
+                onClick={() => setFirstModal(true)}
               />
-                <Modal 
-                    open={visible}
-                    onClose={closeHandler}
-                    image={"/personal-website-snippet.png"}
-                    href={<a href="https://github.com/rallelind/personal-website">https://github.com/rallelind/personal-website</a>}
-                />
+            <Modal 
+                open={firstModal}
+                onClose={() => setFirstModal(false)}
+                image={"/full-stack-snippet.png"}
+            />
           </Grid>
           <Grid xs={8} sm={4} md={4} lg={4}>
               <MockItem 
+                onClick={() => setSecondModal(true)}
                 text="Click to view a code snippet from website i build for a customer" 
               />
+            <Modal 
+                open={secondModal}
+                onClose={() => setSecondModal(false)}
+                image={"/send-email-snippet.png"}
+            />
           </Grid>
           <Grid xs={8} sm={4} md={4} lg={4}>
               <MockItem 
+                onClick={() => setThirdModal(true)}
                 text="Click here to view a code snippet from this very project" 
               />
+            <Modal 
+                open={thirdModal}
+                onClose={() => setThirdModal(false)}
+                image={"/personal-website-snippet.png"}
+            />
           </Grid>
           </Grid.Container>
       </div>

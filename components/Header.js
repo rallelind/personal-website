@@ -40,17 +40,25 @@ const Header = () => {
             </ul>
             <ul>
                 <li className={stylesHeader.icons}>
-                    <Link href="/">
-                        <AiFillGithub size={40} />
+                    <Link href="https://github.com/rallelind">
+                        <a>
+                            <AiFillGithub size={40} />
+                        </a>
+                    </Link>
+                </li>
+                <li className={stylesHeader.icons}>
+                    <Link href="https://linkedin.com/in/rasmus-lind-297249215">
+                        <a>
+                            <AiFillLinkedin size={40} />
+                        </a>
                     </Link>
                 </li>
                 <li className={stylesHeader.icons}>
                     <Link href="/">
-                        <AiFillLinkedin size={40} />
+                        <a>
+                            <Avatar src="/avatar-picture.JPG" size="xl" color="gradient" bordered />
+                        </a>
                     </Link>
-                </li>
-                <li>
-                    <Avatar src="/avatar-picture.JPG" size="xl" color="gradient" bordered />
                 </li>
             </ul>
         </nav>
