@@ -12,7 +12,7 @@ const HobbiesCards = () => {
                     My Hobbies
                 </Text>
             <Grid.Container gap={2} justify="center">
-                <Grid xs={8} sm={4} md={4} lg={4}>
+                <Grid xs={10} sm={4} md={4} lg={4}>
                     <Card cover>
                         <Card.Header css={{ position: 'absolute', zIndex: 1, top: 5 }}>
                             <Col>
@@ -37,7 +37,7 @@ const HobbiesCards = () => {
                             />
                     </Card>
                 </Grid>
-                <Grid xs={8} sm={4} md={4} lg={4}>
+                <Grid xs={10} sm={4} md={4} lg={4}>
                     <Card cover>
                         <Card.Header css={{ position: 'absolute', zIndex: 1, top: 5 }}>
                             <Col>
@@ -62,7 +62,7 @@ const HobbiesCards = () => {
                             />
                     </Card>
                 </Grid>
-                <Grid xs={8} sm={4} md={4} lg={4}>
+                <Grid xs={10} sm={4} md={4} lg={4}>
                     <Card cover>
                         <Card.Header css={{ position: 'absolute', zIndex: 1, top: 5 }}>
                             <Col>
