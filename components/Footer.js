@@ -14,7 +14,7 @@ const Footer = () => {
     return (
         <footer className={stylesFooter.footer}>
             <div className={stylesFooter.footerEle}>
-            <h2>Kontakt</h2>
+            <h2>Contact</h2>
             <br/>
                 <table className={stylesFooter.table}>
                     <tbody>

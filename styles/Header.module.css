@@ -1,12 +1,12 @@
 .nav {
     height: 75px;
-    padding: 10px;        
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: sticky;
     top: 0;
     z-index: 10;
+    width: 100%;
   }
   
   .nav ul {
@@ -20,6 +20,3 @@
     margin: 5px;
   }
 
-  .icons {
-      margin: 5%;
-  }

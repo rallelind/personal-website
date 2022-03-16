@@ -39,21 +39,7 @@ const Header = () => {
                 </li>
             </ul>
             <ul>
-                <li className={stylesHeader.icons}>
-                    <Link href="https://github.com/rallelind">
-                        <a>
-                            <AiFillGithub size={40} />
-                        </a>
-                    </Link>
-                </li>
-                <li className={stylesHeader.icons}>
-                    <Link href="https://linkedin.com/in/rasmus-lind-297249215">
-                        <a>
-                            <AiFillLinkedin size={40} />
-                        </a>
-                    </Link>
-                </li>
-                <li className={stylesHeader.icons}>
+                <li>
                     <Link href="/">
                         <a>
                             <Avatar src="/avatar-picture.JPG" size="xl" color="gradient" bordered />

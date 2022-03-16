@@ -6,8 +6,8 @@ import Cards from "./Cards"
 const WelcomePage = () => {
     return (
         <>
-            <Grid.Container gap={7} justify="center">
-                <Grid>
+            <Grid.Container justify="center">
+                <Grid className={stylesWelcomePage.gridContainer}>
                     <Image className={stylesWelcomePage.image} src="/avatar-picture.JPG" height="500px" width="400px" />
                 </Grid>
                 <Grid lg={4}>

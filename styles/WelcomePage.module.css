@@ -4,4 +4,9 @@
 
 .typewriter {
     margin: auto;
+    padding: 40px;
+}
+
+.gridContainer {
+    padding: 40px;
 }
