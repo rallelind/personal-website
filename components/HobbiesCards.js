@@ -2,7 +2,7 @@ import { Grid, Text, Card, Col } from "@nextui-org/react"
 
 const HobbiesCards = () => {
     return (
-        <div style={{marginTop: "2%"}}>
+        <div style={{marginTop: "3%"}}>
             <Text 
                 h3
                 css={{
