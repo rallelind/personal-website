@@ -33,7 +33,7 @@ const Cards = () => {
     return (
       <div className={stylesCards.gridContainer}>
           <Grid.Container gap={2} justify="center">
-          <Grid xs={8} sm={4} md={4} lg={4}>
+          <Grid xs={10} sm={4} md={4} lg={4}>
               <MockItem 
                 text="Click to view code snippet from a full stack MERN project"
                 onClick={() => setFirstModal(true)}
@@ -44,7 +44,7 @@ const Cards = () => {
                 image={"/full-stack-snippet.png"}
             />
           </Grid>
-          <Grid xs={8} sm={4} md={4} lg={4}>
+          <Grid xs={10} sm={4} md={4} lg={4}>
               <MockItem 
                 onClick={() => setSecondModal(true)}
                 text="Click to view a code snippet from website i build for a customer" 
@@ -55,7 +55,7 @@ const Cards = () => {
                 image={"/send-email-snippet.png"}
             />
           </Grid>
-          <Grid xs={8} sm={4} md={4} lg={4}>
+          <Grid xs={10} sm={4} md={4} lg={4}>
               <MockItem 
                 onClick={() => setThirdModal(true)}
                 text="Click here to view a code snippet from this very project" 
