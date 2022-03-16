@@ -27,22 +27,22 @@ const TechnolgiesCards = () => {
                         <Divider />
                     <Card.Body>
                             <Grid.Container gap={4}>
-                                <Grid lg={4} md={4} sm={4} xs={4}>
+                                <Grid lg={4} md={4} sm={4} xs={6}>
                                     <FaReact size={40}/>
                                 </Grid>
-                                <Grid lg={4} md={4} sm={4} xs={4}>
+                                <Grid lg={4} md={4} sm={4} xs={6}>
                                     <SiNextdotjs size={40} />
                                 </Grid>
-                                <Grid lg={4} md={4} sm={4} xs={4}>
+                                <Grid lg={4} md={4} sm={4} xs={6}>
                                     <DiCss3 size={40} />
                                 </Grid>
-                                <Grid lg={4} md={4} sm={4} xs={4}>
+                                <Grid lg={4} md={4} sm={4} xs={6}>
                                     <AiFillHtml5 size={40} />
                                 </Grid>
-                                <Grid lg={4} md={4} sm={4} xs={4}>
+                                <Grid lg={4} md={4} sm={4} xs={6}>
                                     <SiJavascript size={40} />
                                 </Grid>
-                                <Grid lg={4} md={4} sm={4} xs={4}>
+                                <Grid lg={4} md={4} sm={4} xs={6}>
                                     <SiTypescript size={40} />
                                 </Grid>
                             </Grid.Container>
@@ -66,22 +66,22 @@ const TechnolgiesCards = () => {
                         <Divider />
                     <Card.Body className={stylesTechnologies.container}>
                     <Grid.Container gap={4}>
-                            <Grid lg={4} md={4} sm={4} xs={4}>
+                            <Grid lg={4} md={4} sm={4} xs={6}>
                                 <SiMongodb size={40}/>
                             </Grid>
-                            <Grid lg={4} md={4} sm={4} xs={4}>
+                            <Grid lg={4} md={4} sm={4} xs={6}>
                                 <GrMysql size={40} />
                             </Grid>
-                            <Grid lg={4} md={4} sm={4} xs={4}>
+                            <Grid lg={4} md={4} sm={4} xs={6}>
                                <GrNode size={40} />
                             </Grid>
-                            <Grid lg={4} md={4} sm={4} xs={4}>
+                            <Grid lg={4} md={4} sm={4} xs={6}>
                                 <SiJavascript size={40} />
                             </Grid>
-                            <Grid lg={4} md={4} sm={4} xs={4}>
+                            <Grid lg={4} md={4} sm={4} xs={6}>
                                 <SiTypescript size={40} />
                             </Grid>
-                            <Grid lg={4} md={4} sm={4} xs={4}>
+                            <Grid lg={4} md={4} sm={4} xs={6}>
                                 <SiExpress size={40} />
                             </Grid>
                         </Grid.Container>
