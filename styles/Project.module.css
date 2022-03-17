@@ -1,0 +1,13 @@
+.icons {
+    margin: 2%;
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    padding: 15px;
+}
