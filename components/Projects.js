@@ -1,6 +1,7 @@
-import { Text, Grid, Card, Container, Pagination } from "@nextui-org/react"
+import { Text, Grid, Card, Container, Pagination, Spacer } from "@nextui-org/react"
+import { Link } from "@nextui-org/react"
 import { GrStripe, GrReactjs } from "react-icons/gr"
-import { SiMongodb, SiExpress, SiNodedotjs, SiJavascript, SiBootstrap } from "react-icons/si"
+import { SiMongodb, SiExpress, SiNodedotjs, SiNextdotjs, SiBootstrap } from "react-icons/si"
 import stylesProject from "../styles/Project.module.css"
 import { useState } from "react"
 
@@ -8,7 +9,7 @@ const Projects = () => {
 
     const [image, setImage] = useState("/loginMERN.png")
 
-    const showImage = (page) => {
+    const showImageMERN = (page) => {
         if (page === 1) {
             setImage("/loginMERN.png")
         }
@@ -35,11 +36,29 @@ const Projects = () => {
         }
     }
 
+    const [imageSoMe, setImageSoMe] = useState("/landingpageSOME.png")
+
+
+    const showImageSoMe = (page) => {
+        if(page === 1) {
+            setImageSoMe("/landingpageSOME.png")
+        }
+        if(page === 2) {
+            setImageSoMe("/landingpage2SOME.png")
+        }
+        if(page === 3) {
+            setImageSoMe("/aboutSOME.png")
+        }
+        if(page === 4) {
+            setImageSoMe("/contactSOME.png")
+        }
+    }
+
     return (
         <div className={stylesProject.container}>
-            <Grid.Container gap={3} justify="center">
-                <Grid xs={12} sm={8} lg={5}>
-                    <div>
+            <Grid.Container gap={4} justify="center">
+                <Grid xs={12} sm={8} md={6} lg={4}>
+                    <div className={stylesProject.textContainer}>
                         <Text
                             h3
                             css={{
@@ -48,48 +67,90 @@ const Projects = () => {
                         >
                             Full-Stack MERN project
                         </Text>
-                        <Text>
-                            I build a project where a user could rent out their livable adventure vans. This app
-                            has multiple moving parts and is the biggest project i have worked on. A user could
-                            sign up and log in. Furthermore a user could post their van and on their profile page
-                            they could see their vans posted and delete them if they wanted to. Furthermore i build
-                            a booking capability where a user could go on the product page and pick a date they wanted
-                            to rent the van. The payment capability is still a work in progress but it is build with
-                            the stripe api. Lastly i also build a dashboard to view the vans posted. This is 
-                            therefore by far the largest project i have been working on myself and it is still a 
-                            work in progress.
-                            This project was build using the MERN stack. This means that for the backend i used
-                            express and node.js. For the database i used mongoDB and finally for the frontend i
-                            used React. The reason i used this stack was because i wanted a scalable tech stack
-                            which the MERN stack offers with mongoDB for the database. Another benefit is only
-                            having to use one language which makes development fast and intuitive. 
+                        <Spacer y={1} />
+                        <Text span>
+                            I build a project where a user can rent out their van with the MERN stack.
+                            This is a project with multiple moving parts like payments with stripe,
+                            user authentication, CRUD operations and much more. 
+                            <Text                             
+                                css={{
+                                textGradient: '45deg, $blue500 -20%, $pink500 50%'
+                            }}>(This is still a work in progress...)</Text>
                         </Text>
-                        <Container>
+                        <Spacer y={1} />
+                        <div>
                                 <GrStripe className={stylesProject.icons} size={40}/>
                                 <GrReactjs className={stylesProject.icons} size={40} />
                                 <SiMongodb className={stylesProject.icons} size={40} />
                                 <SiExpress className={stylesProject.icons} size={40} />
                                 <SiNodedotjs className={stylesProject.icons} size={40} />
-                                <SiJavascript className={stylesProject.icons} size={40} />
                                 <SiBootstrap className={stylesProject.icons} size={40} />
-                        </Container>
+                        </div>
                     </div>
                 </Grid>
-                <Grid xs={12} sm={8} lg={5}>
-                    <Card shadow={false} >
-                        <Card.Header>
-                            <Card.Image
-                                    src={image}
-                                    height={340}
-                                    width="100%"
-                                    alt="Card image background"
-                                    />
-                        </Card.Header>
-                            <Container className={stylesProject.pagination}>
-                                <Pagination onChange={showImage} loop color="gradient" onlyDots size="md" total={8} />
-                            </Container>
+                <Grid xs={12} sm={6} md={6} lg={5}>
+                    <Card>
+                            <Card.Body>
+                                <Card.Image
+                                        src={image}
+                                        height={400}
+                                        width="100%"
+                                        alt="Card image background"
+                                        />
+                                </Card.Body>
+                                <Container className={stylesProject.pagination}>
+                                    <Pagination onChange={showImageMERN} loop color="gradient" onlyDots size="md" total={8} />
+                                </Container>
+                            <Card.Footer>
+                                <Text>Link to github: <Link href="https://github.com/rallelind/full-stack-mern">https://github.com/rallelind/full-stack-mern</Link></Text>
+                            </Card.Footer>
                     </Card>
                 </Grid>
+                    <Grid className={stylesProject.secondGridContainer} xs={12} sm={6} md={6} lg={5}>
+                        <Card>
+                                <Card.Body>
+                                    <Card.Image
+                                            src={imageSoMe}
+                                            height={400}
+                                            width="100%"
+                                            alt="Card image background"
+                                            />
+                                    </Card.Body>
+                                    <Container className={stylesProject.pagination}>
+                                        <Pagination onChange={showImageSoMe} loop color="gradient" onlyDots size="md" total={4} />
+                                    </Container>
+                                <Card.Footer>
+                                    <Text>Link to github: <Link href="https://github.com/rallelind/some-marketing-website">https://github.com/rallelind/some-marketing-website</Link></Text>
+                                </Card.Footer>
+                        </Card>
+                    </Grid>
+                    <Spacer y={2} />
+                    <Grid xs={12} sm={8} md={6} lg={4}>
+                        <div className={stylesProject.textContainer}>
+                            <Text
+                                h3
+                                css={{
+                                    textGradient: '45deg, $blue500 -20%, $pink500 50%'
+                                }}
+                            >
+                                SoMe marketing website
+                            </Text>
+                            <Spacer y={1} />
+                            <Text span>
+                                I build a professionel website for a friend who does
+                                social media marketing. This was my first freelance job
+                                and i build it using next.js and sendgrid to send emails
+                                for a serverless contactform. The ui was build with
+                                Next.js UI.
+                            </Text>
+                            <Spacer y={1} />
+                            <div>
+                                    <SiNextdotjs className={stylesProject.icons} size={40} />
+                                    <GrReactjs className={stylesProject.icons} size={40} />
+                                    <SiNodedotjs className={stylesProject.icons} size={40} />
+                            </div>
+                        </div>
+                    </Grid>
             </Grid.Container>
         </div>
     )

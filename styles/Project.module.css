@@ -1,13 +1,18 @@
 .icons {
-    margin: 2%;
+    margin-right: 5%;
+    margin-bottom: 5%;
 }
 
 .pagination {
     display: flex;
-    align-items: center;
     justify-content: center;
 }
 
 .container {
     padding: 15px;
 }
+
+.textContainer {
+    margin: auto;
+}
+
