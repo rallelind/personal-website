@@ -1,9 +1,19 @@
 import Link from "next/link"
+import { useState } from "react"
 import { Text, Avatar } from '@nextui-org/react'
 import stylesHeader from "../styles/Header.module.css"
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai"
+import ContactModal from "./ContactModal"
 
 const Header = () => {
+
+    const [visible, setVisible] = useState(false);
+    const handler = () => setVisible(true);
+    const closeHandler = () => {
+        setVisible(false);
+        console.log('closed');
+    };
+
     return (
         <nav className={stylesHeader.nav}>
             <ul>
@@ -40,11 +50,11 @@ const Header = () => {
             </ul>
             <ul>
                 <li>
-                    <Link href="/">
-                        <a>
-                            <Avatar src="/avatar-picture.JPG" size="xl" color="gradient" bordered />
-                        </a>
-                    </Link>
+                    <Avatar src="/avatar-picture.JPG" onClick={handler} size="xl" color="gradient" bordered />
+                    <ContactModal 
+                        open={visible}
+                        onClose={closeHandler}
+                    />
                 </li>
             </ul>
         </nav>

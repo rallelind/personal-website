@@ -26,12 +26,12 @@ const Footer = () => {
                     <tr>
                         <td>
                             <Link href="https://linkedin.com/in/rasmus-lind-297249215">
-                                <a>
+                                <a target="_blank">
                                     <AiFillLinkedin size={40}/>
                                 </a>
                             </Link>  
                             <Link href="https://github.com/rallelind">
-                                <a>
+                                <a target="_blank">
                                     <AiFillGithub size={40}/>
                                 </a>
                             </Link>  
