@@ -92,6 +92,7 @@ const Projects = () => {
                     <Card>
                             <Card.Body>
                                 <Card.Image
+                                        loading="eager"
                                         src={image}
                                         height={400}
                                         width="100%"
@@ -110,6 +111,7 @@ const Projects = () => {
                         <Card>
                                 <Card.Body>
                                     <Card.Image
+                                            loading="eager"
                                             src={imageSoMe}
                                             height={400}
                                             width="100%"
