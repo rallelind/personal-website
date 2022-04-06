@@ -4,10 +4,20 @@ import { GrStripe, GrReactjs } from "react-icons/gr"
 import { SiMongodb, SiExpress, SiNodedotjs, SiNextdotjs, SiBootstrap } from "react-icons/si"
 import stylesProject from "../styles/Project.module.css"
 import { useState } from "react"
+import ImageSlider from "./ImageSlider"
 
 const Projects = () => {
 
-    const [image, setImage] = useState("/loginMERN.png")
+    const mernProject = [
+        "/loginMERN.png", 
+        "/dashboardMERN.png", 
+        "/aboutMERN.png", 
+        "/featuresMERN.png", 
+        "/productpageMERN.png",
+        "/paymentMERN.png",
+        "/profilepageMERN.png",
+        "/uploadvanMERN.png"
+    ]
 
     const showImageMERN = (page) => {
         if (page === 1) {
@@ -90,18 +100,11 @@ const Projects = () => {
                 </Grid>
                 <Grid xs={12} sm={6} md={6} lg={5}>
                     <Card>
-                            <Card.Body>
-                                <Card.Image
-                                        loading="eager"
-                                        src={image}
-                                        height={400}
-                                        width="100%"
-                                        alt="Card image background"
-                                        />
-                                </Card.Body>
-                                <Container className={stylesProject.pagination}>
-                                    <Pagination onChange={showImageMERN} loop color="gradient" onlyDots size="md" total={8} />
-                                </Container>
+                            <Card.Body style={{ height: "100%" }}>
+                                <ImageSlider 
+                                    images={mernProject.map(image => image)}
+                                />
+                            </Card.Body>
                             <Card.Footer>
                                 <Text>Link to github: <Link href="https://github.com/rallelind/full-stack-mern">https://github.com/rallelind/full-stack-mern</Link></Text>
                             </Card.Footer>
