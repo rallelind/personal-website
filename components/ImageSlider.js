@@ -21,9 +21,10 @@ const ImageSlider = (props) => {
         return (
           <div
             className={className}
-            style={{ ...style, right: "3%", zIndex: "1"  }}
+            style={{ ...style, right: "-2%", zIndex: "1"  }}
             onClick={onClick}
-          />
+          >
+          </div>
         );
       }
       
@@ -32,9 +33,10 @@ const ImageSlider = (props) => {
         return (
           <div
             className={className}
-            style={{ ...style, left: "3%", zIndex: "1"  }}
+            style={{ ...style, left: "-1%", zIndex: "1"  }}
             onClick={onClick}
-          />
+          >
+          </div>
         );
       }
     
