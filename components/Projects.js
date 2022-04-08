@@ -19,50 +19,12 @@ const Projects = () => {
         "/uploadvanMERN.png"
     ]
 
-    const showImageMERN = (page) => {
-        if (page === 1) {
-            setImage("/loginMERN.png")
-        }
-        if(page === 2) {
-            setImage("/dashboardMERN.png")
-        }
-        if(page === 3) {
-            setImage("/aboutMERN.png")
-        }
-        if(page === 4) {
-            setImage("/featuresMERN.png")
-        }
-        if(page === 5) {
-            setImage("/productpageMERN.png")
-        }
-        if(page === 6) {
-            setImage("/paymentMERN.png")
-        }
-        if(page === 7) {
-            setImage("/profilepageMERN.png")
-        }
-        if(page === 8) {
-            setImage("/uploadvanMERN.png")
-        }
-    }
-
-    const [imageSoMe, setImageSoMe] = useState("/landingpageSOME.png")
-
-
-    const showImageSoMe = (page) => {
-        if(page === 1) {
-            setImageSoMe("/landingpageSOME.png")
-        }
-        if(page === 2) {
-            setImageSoMe("/landingpage2SOME.png")
-        }
-        if(page === 3) {
-            setImageSoMe("/aboutSOME.png")
-        }
-        if(page === 4) {
-            setImageSoMe("/contactSOME.png")
-        }
-    }
+    const soMeProject = [
+        "/landingpageSOME.png",
+        "/landingpage2SOME.png",
+        "/aboutSOME.png",
+        "/contactSOME.png"
+    ]
 
     return (
         <div className={stylesProject.container}>
@@ -113,17 +75,10 @@ const Projects = () => {
                     <Grid className={stylesProject.secondGridContainer} xs={12} sm={6} md={6} lg={5}>
                         <Card>
                                 <Card.Body>
-                                    <Card.Image
-                                            loading="eager"
-                                            src={imageSoMe}
-                                            height={400}
-                                            width="100%"
-                                            alt="Card image background"
-                                            />
-                                    </Card.Body>
-                                    <Container className={stylesProject.pagination}>
-                                        <Pagination onChange={showImageSoMe} loop color="gradient" onlyDots size="md" total={4} />
-                                    </Container>
+                                    <ImageSlider 
+                                        images={soMeProject.map(images => images)}
+                                    />
+                                </Card.Body>
                                 <Card.Footer>
                                     <Text>Link to github: <Link href="https://github.com/rallelind/some-marketing-website">https://github.com/rallelind/some-marketing-website</Link></Text>
                                 </Card.Footer>
