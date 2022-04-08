@@ -20,3 +20,7 @@ a {
 .slick-next:before {
   color: blue!important;
 }
+
+.slick-dots {
+  top: 95%;
+}

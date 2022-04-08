@@ -62,10 +62,10 @@ const Projects = () => {
                 </Grid>
                 <Grid xs={12} sm={6} md={6} lg={5}>
                     <Card>
-                            <Card.Body style={{ height: "100%" }}>
-                                <ImageSlider 
-                                    images={mernProject.map(image => image)}
-                                />
+                            <Card.Body style={{ overflow: "hidden" }}>
+                                    <ImageSlider 
+                                        images={mernProject.map(image => image)}
+                                    />
                             </Card.Body>
                             <Card.Footer>
                                 <Text>Link to github: <Link href="https://github.com/rallelind/full-stack-mern">https://github.com/rallelind/full-stack-mern</Link></Text>
@@ -74,7 +74,7 @@ const Projects = () => {
                 </Grid>
                     <Grid className={stylesProject.secondGridContainer} xs={12} sm={6} md={6} lg={5}>
                         <Card>
-                                <Card.Body>
+                                <Card.Body style={{ overflow: "hidden" }}>
                                     <ImageSlider 
                                         images={soMeProject.map(images => images)}
                                     />
