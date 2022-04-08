@@ -25,7 +25,7 @@ const TechnolgiesCards = () => {
                         </Container>
                     </Card.Header>
                         <Divider />
-                    <Card.Body>
+                    <Card.Body style={{ overflow: "hidden" }}>
                             <Grid.Container gap={4}>
                                 <Grid lg={4} md={4} sm={4} xs={6}>
                                     <FaReact size={40}/>
@@ -64,7 +64,7 @@ const TechnolgiesCards = () => {
                         </Container>
                     </Card.Header>
                         <Divider />
-                    <Card.Body className={stylesTechnologies.container}>
+                    <Card.Body style={{ overflow: "hidden" }} className={stylesTechnologies.container}>
                     <Grid.Container gap={4}>
                             <Grid lg={4} md={4} sm={4} xs={6}>
                                 <SiMongodb size={40}/>

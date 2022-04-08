@@ -29,7 +29,8 @@ const Projects = () => {
     return (
         <div className={stylesProject.container}>
             <Grid.Container gap={4} justify="center">
-                <Grid xs={12} sm={8} md={6} lg={4}>
+                <Grid xs={9} sm={5}>
+                    {Grid.xs === true && <h1>Hello</h1>}
                     <div className={stylesProject.textContainer}>
                         <Text
                             h3
@@ -60,7 +61,7 @@ const Projects = () => {
                         </div>
                     </div>
                 </Grid>
-                <Grid xs={12} sm={6} md={6} lg={5}>
+                <Grid xs={9} sm={5}>
                     <Card>
                             <Card.Body style={{ overflow: "hidden" }}>
                                     <ImageSlider 
@@ -72,7 +73,7 @@ const Projects = () => {
                             </Card.Footer>
                     </Card>
                 </Grid>
-                    <Grid className={stylesProject.secondGridContainer} xs={12} sm={6} md={6} lg={5}>
+                    <Grid className={stylesProject.secondGridContainer} xs={9} sm={5}>
                         <Card>
                                 <Card.Body style={{ overflow: "hidden" }}>
                                     <ImageSlider 
@@ -85,7 +86,7 @@ const Projects = () => {
                         </Card>
                     </Grid>
                     <Spacer y={2} />
-                    <Grid xs={12} sm={8} md={6} lg={4}>
+                    <Grid xs={9} sm={5}>
                         <div className={stylesProject.textContainer}>
                             <Text
                                 h3
