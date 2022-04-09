@@ -1,6 +1,6 @@
 import { Grid, Card, Text } from "@nextui-org/react"
 import stylesProject from "../../styles/Project.module.css"
-import ImageSlider from "../ImageSlider"
+import ImageSlider from "../utils/ImageSlider"
 import { Link } from "@nextui-org/react"
 
 

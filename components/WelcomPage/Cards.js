@@ -1,8 +1,8 @@
 import { Grid, Card, Text } from '@nextui-org/react';
 import { useState } from 'react'
-import stylesCards from "../styles/Cards.module.css"
+import stylesCards from "../../styles/Cards.module.css"
 import { BsCodeSlash } from "react-icons/bs"
-import Modal from './Modal';
+import Modal from '../utils/Modal';
 
 
 const Cards = () => {

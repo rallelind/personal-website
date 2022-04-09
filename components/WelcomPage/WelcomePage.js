@@ -1,6 +1,6 @@
 import Image from "next/image"
 import { Grid, Text } from "@nextui-org/react"
-import stylesWelcomePage from "../styles/WelcomePage.module.css"
+import stylesWelcomePage from "../../styles/WelcomePage.module.css"
 import Cards from "./Cards"
 import Typewriter from 'typewriter-effect';
 

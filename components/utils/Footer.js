@@ -1,4 +1,4 @@
-import stylesFooter from "../styles/Footer.module.css"
+import stylesFooter from "../../styles/Footer.module.css"
 import Link from "next/link"
 import { Spacer, Text } from '@nextui-org/react'
 import { AiOutlineMail, AiOutlinePhone } from "react-icons/ai"

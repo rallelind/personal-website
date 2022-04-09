@@ -1,5 +1,5 @@
 import { Grid, Card, Text } from "@nextui-org/react"
-import ImageSlider from "../ImageSlider"
+import ImageSlider from "../utils/ImageSlider"
 import { Link } from "@nextui-org/react"
 
 

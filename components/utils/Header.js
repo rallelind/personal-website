@@ -1,7 +1,7 @@
 import Link from "next/link"
 import { useState } from "react"
 import { Text, Avatar } from '@nextui-org/react'
-import stylesHeader from "../styles/Header.module.css"
+import stylesHeader from "../../styles/Header.module.css"
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai"
 import ContactModal from "./ContactModal"
 
