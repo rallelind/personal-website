@@ -5,7 +5,9 @@ import SoMeText from "../components/Projects/SoMeText"
 import { Grid } from "@nextui-org/react"
 import { useMediaQuery } from "../lib/custom-hooks/useMediaQuery"
 
-const projects = () => {
+export default function Projects() {
+
+    const md = useMediaQuery(960)
 
     return (
         <Grid.Container gap={3} justify="center">
@@ -28,4 +30,3 @@ const projects = () => {
     )
 }
 
-export default projects
