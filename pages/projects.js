@@ -7,8 +7,6 @@ import { useMediaQuery } from "../lib/custom-hooks/useMediaQuery"
 
 const projects = () => {
 
-    const md = useMediaQuery(960)
-
     return (
         <Grid.Container gap={3} justify="center">
             {md ?
