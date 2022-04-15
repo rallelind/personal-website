@@ -25,7 +25,7 @@ const MernCard = () => {
                             />
                     </Card.Body>
                     <Card.Footer>
-                        <Text>Link to github: <Link href="https://github.com/rallelind/full-stack-mern">https://github.com/rallelind/full-stack-mern</Link></Text>
+                        <Text>Link to github: <Link target="_blank" href="https://github.com/rallelind/full-stack-mern">https://github.com/rallelind/full-stack-mern</Link></Text>
                     </Card.Footer>
             </Card>
         </Grid>
