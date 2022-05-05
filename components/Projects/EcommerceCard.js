@@ -3,23 +3,14 @@ import ImageSlider from "../utils/ImageSlider"
 import { Link } from "@nextui-org/react"
 
 
-const EcommerceCard = () => {
-
-    const eCommerceProject = [
-        "/e-commerce/landingpage.png", 
-        "/e-commerce/profile-info.png", 
-        "/e-commerce/upload-product.png", 
-        "/e-commerce/upload-product2.png",
-        "/e-commerce/preview-product.png", 
-        "/e-commerce/your-products.png",
-    ]
+const EcommerceCard = ({ images }) => {
 
     return (
         <Grid xs={9} sm={5}>
             <Card>
                     <Card.Body style={{ overflow: "hidden" }}>
                             <ImageSlider 
-                                images={eCommerceProject.map(image => image)}
+                                images={images}
                             />
                     </Card.Body>
                     <Card.Footer>

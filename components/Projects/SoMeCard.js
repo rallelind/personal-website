@@ -4,21 +4,14 @@ import ImageSlider from "../utils/ImageSlider"
 import { Link } from "@nextui-org/react"
 
 
-const SoMeCard = () => {
-
-    const soMeProject = [
-        "/landingpageSOME.png",
-        "/landingpage2SOME.png",
-        "/aboutSOME.png",
-        "/contactSOME.png"
-    ]
+const SoMeCard = ({ images }) => {
 
     return (
     <Grid className={stylesProject.secondGridContainer} xs={9} sm={5}>
         <Card>
                 <Card.Body style={{ overflow: "hidden" }}>
                     <ImageSlider 
-                        images={soMeProject.map(images => images)}
+                        images={images}
                     />
                 </Card.Body>
                 <Card.Footer>

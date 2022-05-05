@@ -3,25 +3,14 @@ import ImageSlider from "../utils/ImageSlider"
 import { Link } from "@nextui-org/react"
 
 
-const MernCard = () => {
-
-    const mernProject = [
-        "/loginMERN.png", 
-        "/dashboardMERN.png", 
-        "/aboutMERN.png", 
-        "/featuresMERN.png", 
-        "/productpageMERN.png",
-        "/paymentMERN.png",
-        "/profilepageMERN.png",
-        "/uploadvanMERN.png"
-    ]
+const MernCard = ({ images }) => {
 
     return (
         <Grid xs={9} sm={5}>
             <Card>
                     <Card.Body style={{ overflow: "hidden" }}>
                             <ImageSlider 
-                                images={mernProject.map(image => image)}
+                                images={images}
                             />
                     </Card.Body>
                     <Card.Footer>
