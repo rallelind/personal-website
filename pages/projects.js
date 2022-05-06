@@ -25,7 +25,7 @@ export default function Projects({ mernData, eCommerceData, soMeProjectData }) {
     const md = useMediaQuery(960)
 
     return (
-        <Grid.Container style={{ marginTop: "2%" }} gap={3} justify="center">
+        <Grid.Container justify="center">
             {md ?
             <>
                 <EcommerceText />

@@ -6,8 +6,8 @@ import { Link } from "@nextui-org/react"
 const MernCard = ({ images }) => {
 
     return (
-        <Grid xs={9} sm={5}>
-            <Card>
+        <Grid xs={11} sm={5}>
+            <Card style={{ marginBottom: "5%" }}>
                     <Card.Body style={{ overflow: "hidden" }}>
                             <ImageSlider 
                                 images={images}

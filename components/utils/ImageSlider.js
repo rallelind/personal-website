@@ -2,6 +2,7 @@ import React from 'react'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import Image from "next/image"
 
 const ImageSlider = (props) => {
 
@@ -46,7 +47,7 @@ const ImageSlider = (props) => {
             <Slider {...settings}>
                 {props.images.map((image, i) => ( 
                     <div key={i}>
-                        <img className={props.className} src={image} alt="productImage" /><br/>
+                        <Image height="400px" width="600" className={props.className} src={image} alt="productImage" /><br/>
                     </div>
                 ))}
             </Slider>

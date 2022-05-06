@@ -7,7 +7,6 @@ import { Link } from "@nextui-org/react"
 const EcommerceText = () => {
     return (
         <Grid xs={9} sm={5}>
-            {Grid.xs === true && <h1>Hello</h1>}
             <div className={stylesProject.textContainer}>
                 <Text
                     h3

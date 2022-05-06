@@ -7,7 +7,7 @@ import { Link } from "@nextui-org/react"
 const SoMeCard = ({ images }) => {
 
     return (
-    <Grid className={stylesProject.secondGridContainer} xs={9} sm={5}>
+    <Grid className={stylesProject.secondGridContainer} xs={11} sm={5}>
         <Card>
                 <Card.Body style={{ overflow: "hidden" }}>
                     <ImageSlider 
