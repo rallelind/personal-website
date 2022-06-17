@@ -15,7 +15,7 @@ const SoMeCard = ({ images }) => {
                     />
                 </Card.Body>
                 <Card.Footer>
-                    <Text>Link to github: <Link target="_blank" href="https://github.com/rallelind/some-marketing-website">https://github.com/rallelind/some-marketing-website</Link></Text>
+                    <Text>Link to website: <Link target="_blank" href="https://www.wierperia.com">https://www.wierperia.com</Link></Text>
                 </Card.Footer>
         </Card>
     </Grid>

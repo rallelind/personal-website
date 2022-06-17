@@ -18,11 +18,10 @@ const EcommerceText = () => {
                 </Text>
                 <Spacer y={1} />
                 <Text span>
-                    I build a e-commerce project which has some similarities to the
+                    I build a project which has a lot of similarities to the
                     MERN project i build. However, i wanted to try building something
                     like it with another tech stack and found working with Next.js 
-                    and postgres to be a much better choice. It is not as feature rich
-                    as the MERN project but the foundation feels stronger and faster.
+                    and postgres to be a much better choice and more enjoyable to work with.
                     <Text>Link to deployed project: <Link target="_blank" href="https://rasmus-lind-e-commerce.vercel.app">https://rasmus-lind-e-commerce.vercel.app</Link></Text>
 
                 </Text>

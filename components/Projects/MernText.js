@@ -20,10 +20,6 @@ const MernText = () => {
                     I build a project where a user can rent out their van with the MERN stack.
                     This is a project with multiple moving parts like payments with stripe,
                     user authentication, CRUD operations and much more. 
-                    <Text                             
-                        css={{
-                        textGradient: '45deg, $blue500 -20%, $pink500 50%'
-                    }}>(This is still a work in progress...)</Text>
                 </Text>
                 <Spacer y={1} />
                 <div>

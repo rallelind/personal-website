@@ -47,7 +47,7 @@ const ImageSlider = (props) => {
             <Slider {...settings}>
                 {props.images.map((image, i) => ( 
                     <div key={i}>
-                        <Image height="400px" width="600" className={props.className} src={image} alt="productImage" /><br/>
+                        <Image height="350px" width="600" className={props.className} src={image} alt="productImage" /><br/>
                     </div>
                 ))}
             </Slider>
